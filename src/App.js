@@ -8,12 +8,12 @@ import LandingPage from "./pages/LandingPage";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/add-employee" element={<AddEmployee />} />
+        {/* <Route path="/" element={<LandingPage />} />
+        <Route path="/add-employee" element={<AddEmployee />} /> */}
         <Route path="/add-review" element={<AddReview />} />
-        <Route path="/view-reviews" element={<ViewReviews />} />
+        {/* <Route path="/view-reviews" element={<ViewReviews />} /> */}
       </Routes>
     </BrowserRouter>
   );
