@@ -1,18 +1,49 @@
 Reference document for reference to schema design of database.
 
-// Employee
+EMPLOYEE:
 {
-  id: "EMP001",
-  name: "Aman",
-  manager: "Vishwanath"
+  id: string,
+  name: string,
+  manager: string
 }
 
-// Review
+REVIEW:
 {
-  employeeId: "EMP001",
-  employeeName: "Aman",
-  manager: "Vishwanath",
-  rating: 4,
-  comments: "Good work",
-  date: "2025-12-15"
+  employeeId: string,
+  employeeName: string,
+  manager: string,
+  rating: number,
+  comments: string,
+  date: string
 }
+
+Manager Table - Predefined
+Role Table - predefined 
+Departments table - predefined 
+
+
+
+Employee Table - Dynamic
+ 
+
+
+
+
+
+//Add Employee - Gowthami - Read & Write
+Manager's names (fetch)
+Department's under the manager (fetch)
+
+
+
+Flow: Manager -> Departments should be autopoulated based on manager
+
+
+
+
+
+//Add review - Surya - Read & Write
+Manager's names (fetch)
+Employee's name (based on manager name - fetch)
+
+Push data to the database 
