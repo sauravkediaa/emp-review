@@ -1,0 +1,70 @@
+// -------- CLEAR EXISTING DATA --------
+localStorage.removeItem("employees");
+localStorage.removeItem("reviews");
+
+// -------- EMPLOYEES --------
+const employees = [
+  { id: "EMP001", name: "Test 1", manager: "Aman" },
+  { id: "EMP002", name: "Test 2", manager: "Vishwanath" },
+  { id: "EMP003", name: "Test 3", manager: "Anand" },
+  { id: "EMP004", name: "Test 4", manager: "Aman" },
+  { id: "EMP005", name: "Test 5", manager: "Aman" },
+  { id: "EMP006", name: "Test 6", manager: "Vishwanath" },
+];
+
+localStorage.setItem("employees", JSON.stringify(employees));
+
+// -------- REVIEWS --------
+const reviews = [
+  {
+    employeeId: "EMP001",
+    employeeName: "Test 1",
+    manager: "Aman",
+    rating: 5,
+    comments: "Excellent performance",
+    date: "2030-04-04",
+  },
+  {
+    employeeId: "EMP002",
+    employeeName: "Test 2",
+    manager: "Vishwanath",
+    rating: 4,
+    comments: "Very consistent work",
+    date: "2030-04-11",
+  },
+  {
+    employeeId: "EMP003",
+    employeeName: "Test 3",
+    manager: "Anand",
+    rating: 3,
+    comments: "Meets expectations",
+    date: "2030-04-18",
+  },
+  {
+    employeeId: "EMP004",
+    employeeName: "Test 4",
+    manager: "Aman",
+    rating: 4,
+    comments: "Strong team contributor",
+    date: "2030-04-20",
+  },
+  {
+    employeeId: "EMP005",
+    employeeName: "Test 5",
+    manager: "Aman",
+    rating: 2,
+    comments: "Needs improvement",
+    date: "2030-04-22",
+  },
+  {
+    employeeId: "EMP006",
+    employeeName: "Test 6",
+    manager: "Vishwanath",
+    rating: 5,
+    comments: "Outstanding delivery",
+    date: "2030-04-25",
+  },
+];
+
+localStorage.setItem("reviews", JSON.stringify(reviews));
+
