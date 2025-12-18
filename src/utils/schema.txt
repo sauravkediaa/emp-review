@@ -2,9 +2,16 @@ Reference document for reference to schema design of database.
 
 EMPLOYEE:
 {
-  id: string,
-  name: string,
   manager: string
+  id: number,
+  firstName: string,
+  lastName: string,
+  email: string,
+  phone: number,
+  role: string,
+  department: string,
+  dateOfJoining: date,
+  status: boolean
 }
 
 REVIEW:
