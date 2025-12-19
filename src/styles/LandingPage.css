@@ -1,0 +1,43 @@
+.container {
+  padding: 60px 80px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0% 16%;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+   justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 35px;
+
+  /* gap: 360px; */
+}
+
+.row h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.row p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #666;
+  max-width: 320px;
+}
+
+button {
+  background-color: beige;
+  border: solid black;
+  padding: 8px 32px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+}
