@@ -56,5 +56,6 @@ body {
   background-color: unset;
 }
 .star-rating {
-  user-select: none;
+  /* user-select: none; */
+  display: flex
 }
